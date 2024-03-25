@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(143, 140, 140, 0.075);
+}
+
+.card{
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.151);
+    border: 2px solid rgba(128, 128, 128, 0.295);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+textarea.ocrOutput{
+    max-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+}
+
+.imgThumbnail{
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.imgOCR-max{
+    max-height:35%;
+}
+
+
+#fileInput{
+    display: none;
+}
+
+.label-file{
+    aspect-ratio: 16/9;
+    height: 16rem;
+    max-width: 100%;
+    background: rgba(128, 128, 128, 0.068);
+    border: 2px cadetblue dashed;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 300ms ease-in-out, box-shadow 300ms ease-in-out,color 300ms ease-in-out;
+    color: cadetblue;
+    overflow: hidden;
+}
+
+.label-file:hover{
+    background: rgba(128, 128, 128, 0.164);
+    box-shadow: 0 0 10px cadetblue;
+    color: rgb(65, 201, 206);
+}
+
+.label-file:active{
+    background: rgba(65, 201, 206, 0.212);
+}
+
+.label-file-drag{
+    background: rgba(128, 128, 128, 0.164);
+    box-shadow: 0 0 10px cadetblue;
+    color: rgb(65, 201, 206);
+}
